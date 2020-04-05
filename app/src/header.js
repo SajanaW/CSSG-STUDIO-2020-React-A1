@@ -1,37 +1,30 @@
 import React, { Component } from "react";
-import { css, jsx } from "emotion";
+
+// This is one way to write CSS 
+// Read more about it here:
+//https://emotion.sh/docs/introduction
+// For this assignment we recommend using emotion. 
+// The header div below has been styled using the canonical emotion syntax
+// Feel free to copy and reuse in all your components.
+import { css } from "emotion";
+
+//Here is all the image files that you need
 import title_img from "./images/logo-teamtrees-full-alt.svg";
 import astronaut from "./images/astronaut-sign.svg";
 import spaceship from "./images/spaceship.svg";
 import underline from "./images/counter-underline-light.svg";
+
 class Header extends Component {
   render() {
     return (
-      <div className="home">
-        <div className="col-1">
-          <img className="spaceship" src={spaceship} alt="spaceship" />
-        </div>
-
-        <div className="col-2">
-          <img className="trees" src={title_img} alt="header" />
-          <p className="sub-header">
-            We did it! But that doesn't mean we're done. Come back anytime you
-            feel like planting a tree!
-          </p>
-          <div className="counter">
-            <div id="totalTrees" className="counter">
-              21,803,427
-            </div>
-            <div id="trees_planted">TREES PLANTED</div>
-            <img id="underline" src={underline} alt="underline" />
-            <div id="plant_button">Planting Projects</div>
-          </div>
-        </div>
-
-        <div className="col-3">
-          <img className="astronaut" src={astronaut} alt="astronaut" />
-        </div>
-      </div>
+      <div
+        className={css`
+            font-weight: 600;
+            color: #273654;
+            background-color: #f6f6f4;
+            padding: 1.5rem;
+          `}
+      > Header </div>
     );
   }
 }

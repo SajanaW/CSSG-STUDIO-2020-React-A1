@@ -2,6 +2,10 @@
   text-align: center;
 }
 
+/** 
+  We've given you container the astronaut css. 
+  The rest you have to implement.
+*/
 .container {
   display: flex;
   flex-direction: column;
@@ -9,49 +13,6 @@
   justify-content: center;
   background-image: linear-gradient(to bottom, #192334, #b1c6bf);
   min-height: 100vh;
-}
-
-.home {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  width: 45vw;
-}
-
-.col-1 {
-  width: 5vw;
-  height: 100vh;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-top: 10vh;
-}
-
-.col-2 {
-  min-height: 100vh;
-  width: 35vw;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  margin-top: 5vh;
-}
-
-.col-3 {
-  height: 100vh;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  margin-top: 10vh;
-}
-
-.sub-header {
-  font-size: 20px;
-  line-height: 1.5;
-  min-width: 35vw;
-}
-
-.spaceship {
-  height: 7vh;
 }
 
 .astronaut {
@@ -70,39 +31,17 @@
   }
 }
 
-.counter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 35vw;
-}
+/**
+  Other helpful details for the header.js css:
+  The plant button should have background-color: #273654;
+  If you have other questions with regard to the CSS take a 
+  look at our final product:
+    - Right click on any part of it on your browser (preferably Google Chrome)
+    - Click Inspect to see the raw HTML/ CSS that we used.
+    - You should be able to see all the css that we used when we designed the components.
+*/
 
-#totalTrees {
-  margin-top: 5vh;
-  font-size: 60px;
-  font-weight: 1000;
-}
-
-#trees_planted {
-  font-size: 24px;
-}
-
-#underline {
-  margin-top: 2vh;
-  width: 7vw;
-}
-
-#plant_button {
-  text-transform: uppercase;
-  color: white;
-  margin-top: 5vh;
-  border-radius: 5vh;
-  padding: 2vh;
-  background-color: #273654;
-  font-size: 20px;
-}
-
+/*When you are implementing Card One/First Card, this is how you highlight a button*/
 .active {
   background-color: #273654!important;
   color: #fff!important;
